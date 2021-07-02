@@ -82,7 +82,7 @@ def main():
     # Print version
     args.rom.seek(0x14c)
     ver = int.from_bytes(args.rom.read(1), 'little')
-    print('[Crystal SpeedChoice v{:d}]'.format(ver + 1), file=args.out)
+    print('[Crystal SpeedChoice v{:d} - 2021 Summer Tournament edition]'.format(ver + 1), file=args.out)
 
     # Game code
     args.rom.seek(0x13f)
